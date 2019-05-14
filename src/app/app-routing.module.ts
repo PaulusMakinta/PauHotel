@@ -21,6 +21,7 @@ const routes: Routes = [
   {path: 'accomodation', component: AccomodationComponent},
   {path: 'celebrations', component: CelebrationsComponent},
   {path: 'food-beverages', component: FoodBeverageComponent},
+  {path: 'foodandbeverages', component: FoodBeverageComponent},
   {path: 'lifestyle', component: LifestyleComponent},
   {path: 'weddings', component: WeddingsComponent},
   {path: 'auth', component: AuthComponent},
