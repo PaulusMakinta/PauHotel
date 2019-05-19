@@ -1,14 +1,47 @@
 
-.container {
+.hero-container {
  
-background-image: url(/assets/images/pexels.jpg);
+background-image: url(/assets/images/bckrng-clear.png);
 background-size: cover;
 background-position: center center;
-position: relative;
+position: relative; 
 top: 0;
 bottom: 0;
-height: 100vh;
-z-index: -10;
+height: calc(100vh - 145);
+z-index: -10;  
+}
+
+
+
+.southAfrica{
+position: relative;
+width: 100%;
+text-align: center;
+transform: translate(-50%, 50%);
+
+}
+
+.southAfrica h3{
+     -webkit-text-fill-color: transparent;
+     background: url(/assets/images/untitled.png)repeat;
+     -webkit-background-clip: text;
+     font-stretch: normal;
+     font-size: 200px;
+     letter-spacing: 0.09em;
+     font-weight: 500;
+     font-family: Rubic, sans-serif;
+     position: relative;
+     top: 50%;
+     left: 50%;
+}
+
+.home-section{
+    text-align: center;
+}
+
+.home-section p {
+    text-align: center;
+    line-height: normal;
 }
 
 .book-now-container{
@@ -21,11 +54,99 @@ z-index: -10;
     color: white;
     border: 1px solid white;
     text-transform: uppercase;
+    border-radius: 4px;
 }
 
 .header-container{
-    height: 100vh;
+    
+    /* padding: 60px 20px; */
+    text-align: center;
+    /* max-width: 600px; */
 }
+
+.header-container .mat-display-4{
+    color: white;
+
+}
+
+.header-container .mat-display-1{
+    margin: 10px;
+}
+
+/* @media all and (min-width: 768px){
+    .hero-container{
+        height: 100vh;
+    }
+} */
+
+@media all and (max-width: 599px) {
+    .header-container .mat-display-1{
+        font-size: 1.1rem;
+        line-height: 1.1;
+    }
+}
+
+.rooms-home-display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.rooms-home-display mat-card{
+     height: 600px;
+    position: relative;
+    text-align: center;
+}
+
+.rooms-suites{
+    background: url(/assets/images/hotel-rooms.jpg)center center no-repeat;
+    background-size: cover;
+
+}
+ .beach-houses{
+     background: url(/assets/images/beach-house.jpg) center center no-repeat;
+     background-size: cover;
+ }
+
+ .rooms-home-display mat-card-header {
+     position: absolute;
+     top: 25%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 100%;
+     text-align: center;
+     height: 55px;
+     background: rgba(255, 248, 225, .6); 
+ }
+ .rooms-home-display mat-card-header h2{
+     text-transform: uppercase;
+     font-weight: 400;
+     font-size: 34px;
+     line-height: 43px;
+ }
+
+ .rooms-home-display mat-card-actions {
+     position: absolute;
+     top: 75%;
+     left: 55%;
+     transform: translate(-50%, -50%);
+ }
+
+ .rooms-home-display mat-card button{
+     min-width: 141px;
+     min-height: 40px;
+ }
+
+ @media all and (max-width: 1088px){
+     .southAfrica, .southAfrica h3{
+         display: none;
+     }
+     .home-section {
+        padding-top: 80px; 
+    }
+ }
+
 
 /* .practice{
     position: absolute;
